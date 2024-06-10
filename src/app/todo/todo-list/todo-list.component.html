@@ -1,0 +1,19 @@
+<p>TODO-LIST</p>
+<!-- @if( getTodos$() | async; as todos){
+    <ng-container >
+        <ul>
+            @for(todo of todos; track todo){
+                <li>{{todo}}</li>
+            }
+        </ul>
+    </ng-container >
+}
+-->
+
+<ul>
+    @for(todo of todos(); track todo){
+        <li>{{todo.id}}. {{todo.header}}</li>
+    }
+</ul>
+
+
