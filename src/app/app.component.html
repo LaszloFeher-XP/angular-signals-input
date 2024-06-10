@@ -1,0 +1,16 @@
+<main class="main">
+  <app-todo-item [isCompleted]="todoOneComplete()">Check the list
+    <button (click)="todoOneComplete.set(!todoOneComplete())" mat-button>{{ todoOneComplete() ? 'DONE' : 'SET TO DONE'}}</button>
+  </app-todo-item>
+  <app-todo-item [isCompleted]="todoTwoComplete()">Click to every buttons
+    <button (click)="todoTwoComplete.set(!todoTwoComplete())" mat-button>{{ todoTwoComplete() ? 'DONE' : 'SET TO DONE'}}</button>
+  </app-todo-item>
+  <app-todo-item [isCompleted]="todoThreeComplete()">Finish click on the buttons
+    <button (click)="todoThreeComplete.set(!todoThreeComplete())" mat-button>{{ todoThreeComplete() ? 'DONE' : 'SET TO DONE'}}</button>
+  </app-todo-item>
+  @if(everyTodoIscompleted()){
+    <div class="completed">
+      Everything is done.
+    </div> 
+  }
+</main>

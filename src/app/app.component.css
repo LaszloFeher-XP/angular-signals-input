@@ -1,0 +1,25 @@
+:host {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  main {
+    padding: 1rem;
+    box-sizing: inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .completed {
+    background-color: darkgreen;
+    border: 3px solid #fff;
+    color: lightgreen;
+    scale: 0.975;
+    padding: 1rem;
+    width: 27.5rem;
+  }

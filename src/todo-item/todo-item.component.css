@@ -1,0 +1,12 @@
+:host {
+  color: bisque;   
+}
+
+:host(.complete) {
+  color: lightgreen;
+  scale: 1.02;
+}
+
+mat-card {
+    width: 30rem;
+}
